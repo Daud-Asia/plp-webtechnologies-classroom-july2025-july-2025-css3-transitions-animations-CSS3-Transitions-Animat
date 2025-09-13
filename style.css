@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 40px;
+}
+
+/* Button Hover */
+#hoverBtn {
+  padding: 10px 20px;
+  transition: background-color 0.4s ease;
+}
+
+#hoverBtn:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Fade Box */
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: tomato;
+  margin: 20px auto;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Hide with fade */
+.hide {
+  opacity: 0;
+}
+
+/* Card hover animation */
+.card {
+  width: 200px;
+  height: 120px;
+  background: lightgreen;
+  margin: 30px auto;
+  transition: transform 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+/* Keyframe example (not triggered by JS) */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
